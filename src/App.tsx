@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './App.css'
 import './assets/styles/main.scss'
-import RootLayout from './components/layout/Layout'
+import RoutePage from './routes/Route'
 
 function App() {
 
   return (
     <>
-    <RootLayout/>
+    <RoutePage/>
     </>
   )
 }

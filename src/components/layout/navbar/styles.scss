@@ -1,0 +1,69 @@
+@import "../../../assets/styles/main.scss";
+
+.nav {
+    padding: 20px 0;
+
+    .nav-wrapper {
+        @extend .items-center;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        @extend .items-center;
+        gap: 60px;
+        .internal-wrap-links{
+            @extend .items-center;
+            gap: 5px;
+            .subLink{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                margin-top: 210px;
+                border: 1px solid $border1;
+                border-radius: 8px;
+                padding: 5px 30px;
+               .sub-links{
+                    text-decoration: none;
+                    padding: 10px 0;
+                    color: $nav-links;
+                    transition: all linear 0.5;
+                    border-bottom: 1px solid $border1;
+                    &:hover{
+                        color: $main-color;
+                        transition: all linear 0.5;
+                    }
+                }
+                .last-Link{
+                    border-bottom: none;
+                }
+            }
+        }
+            .links{
+                text-decoration: none;
+                color: $nav-links;
+                font-weight: 600;
+                font-family: "Open Sans";
+                font-size: 15px;
+                transition: all linear 0.5;
+            &:hover{
+                color: $main-color;
+                transition: all linear 0.5;
+            }
+            }
+            .active{
+                color: $main-color;
+            }
+    }
+
+    .lang-signInBtn {
+        @extend .items-center;
+        gap: 30px;
+        .lang-wrapper{
+            padding-right: 10px;
+            border-right: 2px solid $border1;
+        }
+        .nav-btn {
+            @include main-btn(9px 16px)
+        }
+    }
+}

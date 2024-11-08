@@ -1,0 +1,11 @@
+@import "./variables";
+@mixin main-btn($padding){
+    background-color: $main-color;
+    padding: $padding;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Open Sans';
+}

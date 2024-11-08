@@ -1,0 +1,15 @@
+@import '../../assets/styles/main.scss';
+.lang-btn , .lang-item{
+   @extend .items-center;
+   gap:5px;
+   background-color: transparent;
+   border: 0;
+   cursor: pointer;
+}
+.custom-dropdown-menu{
+   position: absolute;
+}
+.rotate {
+   transform: rotate(180deg);
+   transition: transform 0.5s ease;
+ }

@@ -1,28 +1,57 @@
-import { FC } from "react";
-
+interface SubLink{
+    title:string,
+    path:string,
+    order:number
+}
 export const NavbarDate :{
-    icon: FC<any>|null;
+    icon:boolean;
     text: string;
-    to:string
+    to:string,
+    subRoutes:Array<SubLink> | null
 }[]=[
     {
-        icon:null,
+        icon:false,
         text:"Home",
-        to:'/'
+        to:'/',
+        subRoutes:null
     },
     {
-        icon:null,
+        icon:true ,
         text:"Programs",
-        to:"/programs"
+        to:"/programs",
+        subRoutes:[
+            {
+                title:"International educational programs",
+                path:'/programs',
+                order:1
+            },
+            {
+                title:"Specialized courses",
+                path:'/programs',
+                order:2
+            },
+            {
+                title:"Islamic Finance Literacy Course",
+                path:'/programs',
+                order:3
+            },
+            {
+                title:"Certification program",
+                path:'/programs',
+                order:4
+            },
+        ]
     },
     {
-        icon:null,
+        icon:false,
         text:"Finance tools",
-        to:"/financetools"
+        to:"/financetools",
+        subRoutes:null
     },
     {
-        icon:null,
+        icon:false,
         text:"Contact",
-        to:"/contact"
+        to:"/contact",
+        subRoutes:null
     },
 ]

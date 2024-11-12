@@ -18,7 +18,7 @@ export const NavbarDate :{
     {
         icon:true ,
         text:"Programs",
-        to:"/programs",
+        to:"",
         subRoutes:[
             {
                 title:"International educational programs",

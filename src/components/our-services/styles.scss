@@ -1,0 +1,53 @@
+@import '../../assets/styles/main.scss';
+.our-services{
+    .card-btn{
+        @include card-btn;
+    }
+    .svg-text{
+        @extend .items-center;
+        gap: 15px;
+    }
+    .card-wrapper{
+        @extend .items-center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:15px;
+    }
+    .card-one{
+        background-color: $card-one;
+        width: 27%;
+        padding: 20px 30px;
+        border-radius: 10px;
+    }
+    .card-one-title{
+        font-size: 20px;
+        font-weight: 700;
+        font-family: Open Sans;
+    }
+    .card-one-text{
+        font-weight: 400;
+        font-size: 17px;
+        color: $card-text;
+        padding: 10px 0 20px 0;
+    }
+    .our-services-title{
+        font-weight: 700;
+        font-size: 40px;
+        font-family: Helvetica Neue;
+        text-align: center;
+        padding-top: 75px;
+    }
+    .text-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .our-services-text{
+        max-width: 500px;
+        text-align: center;
+        color: $nav-links;
+        font-weight: 500;
+        font-size: 20px;
+        font-family: Helvetica Neue;
+        padding: 20px 0;
+    }
+}

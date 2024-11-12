@@ -1,0 +1,81 @@
+@import '../../assets//styles/main.scss';
+
+.headerSlider {
+    max-width: 100vw;
+    width: 100%;
+    .container-item {
+        background-color: $main-color;
+        max-width: 100%;
+        .inner-item{
+            @extend .items-center;
+            justify-content: space-between;
+            .inner-item-text1{
+                display: inline;
+                background-color: white;
+                padding: 7px 14px;
+                font-size: 17px;
+                font-weight: 500;
+                font-family: Inter;
+                border-radius: 10px
+            }
+            .inner-item-mainText{
+                font-family: Inter;
+                font-weight: 700;
+                font-size: 50px;
+                color: white;
+                padding: 20px 0;
+                width: 610px;
+            }
+            .btn-avatar-wrap{
+                @extend .items-center;
+                .btn{
+                    background-color:$header-btn; 
+                    color: white;
+                    border: none;
+                    padding: 15px 25px;
+                    border-radius: 10px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    font-family: inter;
+                }
+            }
+            .item-one{
+                
+            }
+            .item-two{
+                // width: 40%;
+                img{
+                    width: 790px;
+                }
+            }
+        }
+        .avatar-stars{
+            @extend .items-center;
+            transform: translateX(-20px);
+            .stars-text{
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                p{
+                    color: white;
+                    font-weight: 600;
+                    font-size: 12px;
+                    font-family: Raleway;
+                }
+            }
+        }
+    }
+    .slick-slider{
+        .slick-prev {
+            left: 0;
+        }
+        .slick-next{
+            display: none !important;
+        }
+    }
+    .student-num{
+        position: absolute;
+        margin-top: 20px;
+        margin-left:80px;
+    }
+}

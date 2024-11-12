@@ -2,7 +2,7 @@ import './styles.scss'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {Img, Avatars, Stars, StudentsNum } from '../../assets';
+import {Img, Avatars, Stars, Calendar } from '../../assets';
 
 const HeaderSlider = () => {
   const settings = {
@@ -48,7 +48,13 @@ const HeaderSlider = () => {
             </div>
             <div className='item-two'>
               <div className='student-num'>
-                <StudentsNum />
+                <div className='calendar-text'>
+                  <Calendar/>
+                  <div className='text-num'>
+                    <p className='textNum1'>250k</p>
+                    <p className='textNum2'>Assisted Student</p>
+                  </div>
+                </div>
               </div>
               <img src={Img} alt='header-image' />
             </div>

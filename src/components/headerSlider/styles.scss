@@ -39,13 +39,29 @@
                     font-family: inter;
                 }
             }
-            .item-one{
-                
-            }
+          
             .item-two{
-                // width: 40%;
                 img{
                     width: 790px;
+                }
+                .calendar-text{
+                    @extend .items-center;
+                    gap: 20px;
+                    background-color: $studentsNumBg;
+                    padding: 10px;
+                    border-radius: 15px;
+                }
+                .textNum1{
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: $studentsNum;
+                    font-family: Nunito Sans;
+                }
+                .textNum2{
+                    font-weight: 600;
+                    font-family: Inter;
+                    font-size: 14px;
+                    color: $studentsNum2;
                 }
             }
         }
@@ -76,6 +92,6 @@
     .student-num{
         position: absolute;
         margin-top: 20px;
-        margin-left:80px;
+        margin-left:150px;
     }
 }

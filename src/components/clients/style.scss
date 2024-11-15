@@ -1,0 +1,35 @@
+@import '../../assets//styles//main.scss';
+.clients{
+    max-width: 100vw;
+    overflow-x: hidden;
+    &__title{
+        font-family: Helvetica Neue;
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+        padding: 10px 0 40px 0;
+    }
+    &__slider{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .slider-item{
+        background-color: $partnersBg;
+        height: 110px;
+        width: 50%;
+        border: 1px solid $partnerBorder;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+        border-radius: 10px;
+      
+    }
+    .slick-track {
+        display: flex;
+        gap: 20px; /* Elementlar orasidagi bo'shliqni 10px ga oshiradi */
+      }
+    
+
+}

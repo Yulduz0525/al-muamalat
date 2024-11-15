@@ -1,0 +1,70 @@
+@import "../../assets/styles/main.scss";
+
+.experts {
+    padding: 50px 0;
+
+    &__title {
+        font-size: 40px;
+        font-weight: 700;
+        font-family: Helvetica Neue;
+        text-align: center;
+    }
+
+    &__text-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    &__text {
+        font-family: Helvetica Neue;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 500;
+        max-width: 500px;
+        color: $nav-links;
+        font-weight: 500;
+    }
+
+    .slider-item {
+        display: flex !important;
+        align-items:center;
+        background-color: $sliderBg;
+        border-radius: 10px;
+        width: 80% !important;
+        margin: 0 auto;
+        justify-content: center;
+        gap: 50px;
+        &__img {
+            padding: 25px 0px;
+            img {
+                width: 300px;
+            }
+        }
+        &__texts{
+            display: flex;
+            flex-direction: column;
+            gap:45px;
+        }
+        &__title {
+            font-family: Helvetica Neue;
+            font-weight: 700;
+            font-size: 28px;
+            color: $sliderTitle;
+        }
+
+        &__text {
+            font-family: Helvetica Neue;
+            font-weight: 400;
+            font-size: 22px;
+            color: $sliderTitle;
+            max-width: 460px;
+        }
+
+        &__icons {
+            @extend .items-center;
+            gap: 25px;
+        }
+    }
+
+}

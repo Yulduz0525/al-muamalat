@@ -1,11 +1,12 @@
-import Header from '../../components/header'
-import OurServices from '../../components/our-services/OurServices'
+import { Clients, Experts, Header, OurServices } from '../../components'
 import './styles.scss'
 const Home = () => {
   return (
     <div>
       <Header/>
       <OurServices/>
+      <Experts/>
+      <Clients/>
     </div>
   )
 }

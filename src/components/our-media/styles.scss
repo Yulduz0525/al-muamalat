@@ -1,0 +1,72 @@
+@import '../../assets/styles/main.scss';
+$OurMediaImg1:'../../assets/images/our-media-img1.png';
+.our-media {
+
+    .our-media-title {
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 50px;
+        font-family: Helvetica Neue;
+    }
+
+    .prevBtn {
+        background-color: $sliderBtnBg;
+        border-radius: 100%;
+        padding: 15px 12px;
+        border: none;
+        transition: all linear 0.3s;
+
+        .color {
+            color: black;
+        }
+
+        &:hover {
+            background-color: $main-color;
+            transition: all linear 0.3s;
+
+            .color {
+                color: white;
+            }
+        }
+    }
+
+    .nextBtn {
+        @extend .prevBtn;
+    }
+
+    .btn-text-wrapper {
+        @extend .items-center;
+        justify-content: space-between;
+
+        .text {
+            font-weight: 500;
+            font-size: 35px;
+            font-family: Helvetica Neue;
+        }
+    }
+
+    .btnWrapper {
+        display: flex;
+        gap: 12px;
+        padding: 20px 45px;
+    }
+    .slider-item1{
+        background-image: url(#{OurMediaImg1});
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+    }
+    .card-btn{
+        background-color: white;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 12px;
+    }
+    .card-content-wrapper{
+        @extend .items-center;
+        gap: 5px;
+    }
+}

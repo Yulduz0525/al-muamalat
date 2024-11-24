@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import { CardBtn, NextIcon, OurMediaImg1, OurMediaImg2, OurMediaImg3, PrevIcon } from "../../assets";
+import { NextIcon, OurMediaImg1, OurMediaImg2, OurMediaImg3, PrevIcon } from "../../assets";
 import * as React from "react";
 
 function MultipleItems() {
@@ -49,12 +49,6 @@ function MultipleItems() {
             </div>
             <Slider ref={sliderRef} {...settings}>
                 <div className="slider-item1" style={{ backgroundImage: `url(${OurMediaImg1})` }}>
-                    {/* <div className="card-content-wrapper">
-                        <p>Why Islamic finance?</p>
-                        <button className="card-btn">
-                            <CardBtn />
-                        </button>
-                    </div> */}
                     <img src={OurMediaImg1}/>
                 </div>
                 <div>
@@ -65,7 +59,6 @@ function MultipleItems() {
                 </div>
                 <div className="slider-item1">
                 <img src={OurMediaImg1}/>
-
                 </div>
                 <div>
                     <img src={OurMediaImg2} alt="Our media img2" />
@@ -75,7 +68,6 @@ function MultipleItems() {
                 </div>
                 <div className="slider-item1">
                 <img src={OurMediaImg1}/>
-
                 </div>
                 <div>
                     <img src={OurMediaImg2} alt="Our media img2" />

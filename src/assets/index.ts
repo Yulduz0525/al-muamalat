@@ -28,5 +28,7 @@ export {default as FooterYoutbe} from "./icons/FooterYoutubeSvg";
 export {default as FooterFacebook} from "./icons/FooterFacebokSvg";
 export {default as FooterTwitter} from "./icons/FooterTwitterSvg";
 export {default as FooterInsta} from "./icons/FooterinstaSvg";
+export {default as Avatar} from "./images/avatar.jpg";
+
 
 

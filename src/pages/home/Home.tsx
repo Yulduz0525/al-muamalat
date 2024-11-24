@@ -1,4 +1,4 @@
-import { Clients, Experts, Header, OurMedia, OurServices } from '../../components'
+import { Clients, Comments, Experts, Header, OurMedia, OurServices } from '../../components'
 import './styles.scss'
 const Home = () => {
   return (
@@ -8,6 +8,7 @@ const Home = () => {
       <Experts/>
       <Clients/>
       <OurMedia/>
+      <Comments/>
     </div>
   )
 }

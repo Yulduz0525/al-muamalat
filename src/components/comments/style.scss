@@ -1,0 +1,71 @@
+@import '../../assets/styles/main.scss';
+
+.comments {
+    padding: 40px 0;
+
+    &_title {
+        font-family: Helvetica Neue;
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    &_dsc_wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    &_dsc {
+        color: $nav-links;
+        font-family: Helvetica Neue;
+        font-weight: 500;
+        font-size: 17px;
+        text-align: center;
+        max-width: 500px;
+    }
+    .commentsSlider{
+        padding: 20px 0;
+    }
+    .slider_item {
+        background-color: $partnersBg;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 10px 10px #8787871C;
+
+    }
+    .slick-slide {
+        padding: 0 40px; /* Har bir slayd orasiga masofa qo'shish */
+      }
+      
+      .slick-list {
+        overflow: hidden;
+        margin: 0 -40px; /* Ichki elementlarning masofasini tenglashtirish */
+      }
+      .internal_p{
+        color: $nav-links;
+        font-family: Helvetica Neue;
+        font-weight: 500;
+        font-size: 17px;
+      }
+      .internal_wrap{
+        @extend .items-center;
+        gap: 15px;
+        padding: 20px 0;
+      }
+      .internal_title{
+        font-family: Helvetica Neue;
+        font-weight: 700;
+        font-size: 18px;
+      }
+      .internal_text{
+        color: $nav-links;
+        font-family: Helvetica Neue;
+        font-weight: 500;
+        font-size: 14px;
+        padding: 4px 0;
+      }
+      .slick-next {
+        display: none !important;
+      }
+}
